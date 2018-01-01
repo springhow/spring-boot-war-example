@@ -23,8 +23,4 @@ public class HelloWorldApplication extends SpringBootServletInitializer {
 	String helloWorld() {
 		return "Hello World!";
 	}
-
-	public static void main(String[] args) {
-		SpringApplication.run(HelloWorldApplication.class, args);
-	}
 }
