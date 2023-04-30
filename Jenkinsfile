@@ -7,12 +7,13 @@ pipeline{
         stage("Test"){
             steps{  
                 // mvn test
-                bat 'mvn --version'
+                bat 'mvn test'
             }
         }
         stage("Build"){
             steps{
                 // mvn package
+                bat 'mvn package'
             }
         }
         stage("Deploy on test"){
