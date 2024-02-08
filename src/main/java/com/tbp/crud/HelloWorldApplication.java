@@ -1,11 +1,19 @@
-package com.springhow.example.helloworld;
+package com.tbp.crud;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.tbp.crud.entity.User;
+import com.tbp.crud.service.UserService;
 
 @RestController
 @SpringBootApplication
@@ -23,7 +31,9 @@ public class HelloWorldApplication extends SpringBootServletInitializer {
 
     @RequestMapping("/")
     String helloWorld() {
-        return "Hello World!";
-    }
+       return "Hello World! /n Complete you Crud of userss using the postman <a href='/userss'>here</a> ";
+     }
+    
+	
 
 }
