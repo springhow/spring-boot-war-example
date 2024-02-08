@@ -31,8 +31,8 @@ public class HelloWorldApplication extends SpringBootServletInitializer {
 
     @RequestMapping("/")
     String helloWorld() {
-        return "Hello World!";
-    }
+       return "Hello World! /n Complete you Crud of userss using the postman <a href='/userss'>here</a> ";
+     }
     
 	
 
