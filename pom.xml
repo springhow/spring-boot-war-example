@@ -37,14 +37,30 @@
     </dependency>
   </dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
+  <mirrors>
+  <mirror>
+    <id>central</id>
+    <mirrorOf>central</mirrorOf>
+    <url>https://repo.maven.apache.org/maven2</url>
+    <blocked>false</blocked>
+    <mirrorOfLayouts>default,legacy</mirrorOfLayouts>
+    <releases>
+      <enabled>true</enabled>
+    </releases>
+    <snapshots>
+      <enabled>true</enabled>
+    </snapshots>
+  </mirror>
+</mirrors>
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+      <version>2.6.3</version>
+    </plugin>
+  </plugins>
+</build>
 
 
 </project>
